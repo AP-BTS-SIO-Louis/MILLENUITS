@@ -5,8 +5,6 @@ __Mission 2 : Mise en place de l'infrastructure réseau__
 
 __Contexte : MilleNuits__
 
-
-
 ____
 # Informations générales
 
@@ -68,6 +66,7 @@ VLAN 11 : Autres
 VLAN 12 : Administratif
 VLAN 13 : VentesEtudes
 VLAN 14 : Logistique
+VLAN 51 : Serveur
 
 Nommer également les Vlan sur le Commutateur 2960 central a la maquette
 
@@ -78,7 +77,7 @@ Switch>en
 Switch#sh vlan
 ```
 
-Cette commande permet d'afficher tout les Vlan enregistrer ainsi que leurs noms
+Cette commande permet d'afficher tout les Vlan enregistrer ainsi que leurs noms et leurs interfaces
 
 __Création du Trunk entre le Commutateur 2960 et le Routeur 1921 :__
 
@@ -86,7 +85,21 @@ __Création du Trunk entre le Commutateur 2960 et le Routeur 1921 :__
 Switch(config)#interface Gig0/2
 Switch(config-if)#switchport mode trunk 
 Switch(config-if)#switchport trunk allowed vlan 10,11,12,13,14
-Switch(config-if)# switchport trunk native vlan 99
+Switch(config-if)#switchport trunk native vlan 99
 Switch(config-if)#no shutdown
 Switch(config-if)#exit
+```
+
+__Lier le commutateur Cœur de Réseau aux PC services :__
+
+Faire cette commande pour chaque commutateur des réseau (Admin, Autres, Etc...)
+
+```
+Switch(config)#interface fastEthernet 0/1
+Switch(config-if)#switchport mode access 
+Switch(config-if)#switchport access vlan 10
+Switch(config-if)#exit
+Switch(config)interface fastEthernet 1/1
+Switch(config-if)#swicth mode access
+Switch(config-if)#swicth access vlan 10
 ```
