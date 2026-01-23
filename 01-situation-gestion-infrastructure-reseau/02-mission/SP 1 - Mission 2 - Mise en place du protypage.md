@@ -305,3 +305,5 @@ Routeur(config)# ip nat inside source list 1 interface GigabitEthernet0/1 overlo
 ```CISCO
 Routeur(config)# ip route 0.0.0.0 0.0.0.0 45.45.45.45
 ```
+
+---
