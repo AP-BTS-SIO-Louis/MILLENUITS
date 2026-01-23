@@ -48,7 +48,3 @@ L'ensemble des projets aborde des compétences transversales et techniques vari�
 
 * **Louis MEDO**
 * [Linkedin](https://www.linkedin.com/in/louismedo/) | [Portfolio](https://louis.loutik.fr/)
-
----
-
-### Souhaites-tu que je t'aide à créer un modèle de fichier `README.md` spécifique à mettre *à l'intérieur* de chaque dossier de situation (par exemple dans `01-situation...`) pour détailler les missions techniques de celui-ci ?
