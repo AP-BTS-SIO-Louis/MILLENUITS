@@ -43,8 +43,8 @@ L'ensemble des projets aborde des comp√©tences transversales et techniques vari√
 
 ## Auteurs
 
-* **Louis Biseray**
-* Linkedin | Portfolio
+**Louis Biseray**
+Linkedin | Portfolio
 
-* **Louis MEDO**
-* [Linkedin](https://www.linkedin.com/in/louismedo/) | [Portfolio](https://louis.loutik.fr/)
+**Louis MEDO**
+[Linkedin](https://www.linkedin.com/in/louismedo/) | [Portfolio](https://louis.loutik.fr/) | [GitHub](https://github.com/FireToak)
