@@ -63,7 +63,7 @@ MN07 Serveur de fichiers : 172.16.51.7  Masque : 255.255.255.0
 | **Type**<br><br>**C = connectée**<br><br>**S = statique** | **Réseau destination** | **Masque** | **Passerelle** | **Adresse IP interface locale** |
 | --------------------------------------------------------- | ---------------------- | ---------- | -------------- | ------------------------------- |
 | S                                                         | 0.0.0.0                | 255.0.0.0  | 45.45.45.45    | 0.0.0.0                         |
-**Table de routage - rt_millesnuits-01**
+**Table de routage - rt_millenuits-01**
 
 | **Type**<br><br>**C = connectée**<br><br>**S = statique** | **Réseau destination** | **Masque**      | **Passerelle** | **Adresse IP interface locale** |
 | --------------------------------------------------------- | ---------------------- | --------------- | -------------- | ------------------------------- |
