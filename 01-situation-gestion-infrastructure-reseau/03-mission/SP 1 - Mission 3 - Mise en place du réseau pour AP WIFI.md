@@ -1,4 +1,4 @@
-# SP 1 - Mission 3 - Mise en place AP WIFI Commercial et invité
+# SP 1 - Mission 3 - Mise en place du réseau pour AP WIFI
 
 **SP 1 : Gestion de l'infrastructure réseau**
 
@@ -45,7 +45,7 @@ Configuration de l'encapsulation et de l'adressage IP pour le routage du VLAN 15
 rt_millenuits-01(config)# interface GigabitEthernet0/0.15
 rt_millenuits-01(config-subif)# encapsulation dot1Q 15
 rt_millenuits-01(config-subif)# ip address 172.40.2.142 255.255.255.240
-rt_millenuits-01(config-subif)# ip nat outside
+rt_millenuits-01(config-subif)# ip nat inside
 rt_millenuits-01(config-subif)# exit
 
 ```
@@ -93,7 +93,6 @@ sw_coeur-01(config-if)# exit
 
 ```
 
-
 2. **Vérification finale**
 Réaliser un test de ping depuis un équipement du VLAN 15 vers la sous-interface du routeur (`172.40.2.142`) pour valider le routage.
 
@@ -102,3 +101,5 @@ Réaliser un test de ping depuis un équipement du VLAN 15 vers la sous-interfac
 
 * Veillez à ce que l'AP supporte le tagging VLAN (Trunk) si les deux SSID (Commercial/Invité) sont diffusés sur le même port physique.
 * Le masque `255.255.255.240` limite le réseau à 14 adresses hôtes utilisables.
+   
+---
